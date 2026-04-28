@@ -12,8 +12,9 @@
   --rose: #b58a7a;
   --line: rgba(245, 240, 232, 0.17);
   --shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
-  --serif: "Playfair Display", Georgia, serif;
-  --sans: "Inter", Arial, sans-serif;
+  --serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --body-serif: "EB Garamond", Georgia, serif;
+  --sans: "Questrial", Arial, sans-serif;
 }
 
 * {
@@ -95,7 +96,8 @@ a {
   gap: clamp(16px, 2.3vw, 32px);
   align-items: center;
   font-size: 0.84rem;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .site-nav a {
@@ -117,7 +119,8 @@ a {
   padding: 0 24px;
   border: 1px solid transparent;
   font-size: 0.84rem;
-  font-weight: 800;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
@@ -202,7 +205,7 @@ a {
   margin: 0 0 18px;
   color: var(--gold);
   font-size: 0.76rem;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: 0.18em;
   line-height: 1.5;
   text-transform: uppercase;
@@ -212,14 +215,14 @@ h1,
 h2 {
   margin: 0;
   font-family: var(--serif);
-  font-weight: 600;
-  line-height: 0.98;
+  font-weight: 400;
+  line-height: 0.95;
 }
 
 h1 {
   max-width: 760px;
   font-size: clamp(2.8rem, 4.9vw, 5.55rem);
-  line-height: 1.03;
+  line-height: 0.98;
 }
 
 h2 {
@@ -229,12 +232,14 @@ h2 {
 h3 {
   margin: 0;
   font-family: var(--serif);
-  font-size: 1.45rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.05;
 }
 
 p {
   color: rgba(245, 240, 232, 0.76);
-  line-height: 1.8;
+  line-height: 1.82;
 }
 
 .hero__copy {
